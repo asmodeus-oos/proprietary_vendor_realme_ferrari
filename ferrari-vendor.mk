@@ -13,8 +13,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/ferrari/proprietary/odm/etc/acdbdata/ORANGE/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/ORANGE/acdb_cal.acdb \
     vendor/realme/ferrari/proprietary/odm/etc/acdbdata/VDF/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/VDF/acdb_cal.acdb \
     vendor/realme/ferrari/proprietary/odm/etc/acdbdata/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/acdb_cal.acdb \
-    vendor/realme/ferrari/proprietary/odm/etc/acdbdata/acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_mtp/MTP_acdb_cal.acdb \
-    vendor/realme/ferrari/proprietary/odm/etc/acdbdata/FTM/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_mtp/MTP_workspaceFileXml.qwsp \
     vendor/realme/ferrari/proprietary/odm/etc/camera/3dphoto/color_depth_inpaint.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/3dphoto/color_depth_inpaint.dlc \
     vendor/realme/ferrari/proprietary/odm/etc/camera/3dphoto/midas_small_ver9_fp16_gpu.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/3dphoto/midas_small_ver9_fp16_gpu.dlc \
     vendor/realme/ferrari/proprietary/odm/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config \
@@ -937,20 +935,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/ferrari/proprietary/vendor/lib64/camera/arcsoft_dc_calibration_w.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_dc_calibration_w.bin
 
 PRODUCT_PACKAGES += \
-    OplusCamera \
-    com.oplus.camera.unit.sdk \
-    libAPSClient-cmd-jni \
-    libAPSClient-jni \
-    libAncHumBokeh-jni \
-    libApsFaceBeautyPreviewProductJni \
-    libApsSuperEISPreviewJni \
-    libarcsoft_panorama_burstcapture \
-    libarcsoft_wideselfie \
-    libjnisingleblur_api \
-    libsingle_camera_bokeh_native \
-    libAPSClient-cmd-jni-extension.oplus \
-    libapssuspend-jni.oplus \
-    libOplusStringJNI \
     com.arcsoft.node.eisv2 \
     com.arcsoft.node.smooth_transition \
     com.bots.node.vendortagwrite \
@@ -1122,6 +1106,7 @@ PRODUCT_PACKAGES += \
     libopencv3a \
     libopestriping \
     libos \
+    libpenguin \
     libqll \
     libqll10 \
     libqllengine \
@@ -1136,6 +1121,40 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk_platform \
     vendor.qti.hardware.camera.aon@1.0-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
+    libAPSClient-cmd-jni \
+    libAPSClient-jni \
+    libAncFilter_jni \
+    libAncHumBokeh-jni \
+    libAncHumanDoubleExposure-jni \
+    libAncHumanRetain-jni_v2 \
+    libAncHumanSegFigureFusion-jni \
+    libAncHumanVideo-jni \
+    libApsFaceBeautyPreviewProductJni \
+    libAvatarEngineRender \
+    libAvatarEngineRenderNative \
+    libCombineLut \
+    libCombineLutJni \
+    libFileExtender-jni \
+    libHeifEncoderWrapper \
+    libNativeWinBuffExchange \
+    libOplusBlurPreviewJNI \
+    libSuperTextWrapper_system_ext \
+    libXDocProcessSDK-jni \
+    libXDocProcessSDK_system_ext \
+    libYTCommon_system_ext \
+    libarcsoft_wideselfie \
+    libcolorx-loader \
+    libcolorx \
+    libcoolex \
+    libextendfile_system_ext \
+    libjni_wideselfie \
+    libjnisingleblur_api \
+    libjnistblur_api \
+    libmpbase_system_ext \
+    liboplusheifwriter \
+    libsingle_camera_bokeh_native \
+    libst_mobile \
+    libst_sticker_jni \
     libQnnHtp \
     libQnnHtpPrepare \
     libQnnHtpV69Stub \
@@ -1187,6 +1206,7 @@ PRODUCT_PACKAGES += \
     libNamaWrapper \
     libOGLManager \
     libOPLUS_SCPortrait \
+    libOplusSecurity \
     libPerfectColor \
     libPerfectlyClearCrux \
     libPerfectlyClearCruxOpt \
@@ -1307,7 +1327,6 @@ PRODUCT_PACKAGES += \
     librpmbengclient \
     libsaveshaderbin \
     libsecurity_event_dcs \
-    libOplusSecurity \
     libsharebuffer \
     libsharebuffer_impl \
     libsnpe_dsp_domains_v2 \
@@ -1365,6 +1384,11 @@ PRODUCT_PACKAGES += \
     odm_lib_rfsa_adsp_libvdblurless_4_6_10L_skel_so \
     odm_lib_rfsa_adsp_libvdblurless_skel_so \
     odm_lib_rfsa_adsp_libvdsuperphoto_skel_so \
+    OplusAppPlatform \
+    OplusCamera \
+    oplus-support-wrapper \
+    com.oplus.camera.unit.sdk.adapter \
+    com.oplus.camera.unit.sdk \
     manifest_oplus_cameraextension_aidl.xml \
     manifest_oplus_fingerprint.xml \
     vendor.qti.camera.provider@2.7-service_64 \
@@ -1372,7 +1396,3 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1-service \
     vendor.qti.secure_element@1.2-service \
     init.oplus.fingerprints
-
-# Stock OCS camera SDK jar on the boot classpath for OPlusCamera
-PRODUCT_BOOT_JARS += \
-    com.oplus.camera.unit.sdk

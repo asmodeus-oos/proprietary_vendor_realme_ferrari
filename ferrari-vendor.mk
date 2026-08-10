@@ -937,6 +937,20 @@ PRODUCT_COPY_FILES += \
     vendor/realme/ferrari/proprietary/vendor/lib64/camera/arcsoft_dc_calibration_w.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_dc_calibration_w.bin
 
 PRODUCT_PACKAGES += \
+    OplusCamera \
+    com.oplus.camera.unit.sdk \
+    libAPSClient-cmd-jni \
+    libAPSClient-jni \
+    libAncHumBokeh-jni \
+    libApsFaceBeautyPreviewProductJni \
+    libApsSuperEISPreviewJni \
+    libarcsoft_panorama_burstcapture \
+    libarcsoft_wideselfie \
+    libjnisingleblur_api \
+    libsingle_camera_bokeh_native \
+    libAPSClient-cmd-jni-extension.oplus \
+    libapssuspend-jni.oplus \
+    libOplusStringJNI \
     com.arcsoft.node.eisv2 \
     com.arcsoft.node.smooth_transition \
     com.bots.node.vendortagwrite \
@@ -1293,6 +1307,7 @@ PRODUCT_PACKAGES += \
     librpmbengclient \
     libsaveshaderbin \
     libsecurity_event_dcs \
+    libOplusSecurity \
     libsharebuffer \
     libsharebuffer_impl \
     libsnpe_dsp_domains_v2 \
@@ -1357,3 +1372,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1-service \
     vendor.qti.secure_element@1.2-service \
     init.oplus.fingerprints
+
+# Stock OCS camera SDK jar on the boot classpath for OPlusCamera
+PRODUCT_BOOT_JARS += \
+    com.oplus.camera.unit.sdk

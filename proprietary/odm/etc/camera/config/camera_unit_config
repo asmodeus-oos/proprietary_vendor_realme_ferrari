@@ -146,7 +146,7 @@
     "star_capture_case":[{"reprocess_input":"var_camera"}, {"preview":"var_camera"}, {"raw_output":"var_camera"}, {"capture":"var_camera"}]
   },
 
-  "support_default_preview_sizes":["1920X1080", "1280X720"],
+  "support_default_preview_sizes":["3840X2160", "1920X1080", "1280X720"],
   "mode_type_feature_support_preview_size":{
     "video_mode":{
       "rear_main":{
@@ -163,15 +163,15 @@
   "mode_type_feature_max_video_size":{
     "video_mode":{
       "rear_main":{
-        "video_stabilization":["1920X1080", "1920X1080"],
+        "video_stabilization":["3840X2160", "3840X2160"],
         "super_stabilization":["1920X1080", "1920X1080"],
-        "default":["1920X1080", "1920X1080"]
+        "default":["3840X2160", "3840X2160"]
       },
 
       "rear_wide":{
-        "video_stabilization":["1920X1080", "1920X1080"],
+        "video_stabilization":["3840X2160", "3840X2160"],
         "super_stabilization":["1920X1080", "1920X1080"],
-        "default":["1920X1080", "1920X1080"]
+        "default":["3840X2160", "3840X2160"]
       },
 
       "front_main":{
@@ -179,7 +179,7 @@
       },
 
       "rear_sat":{
-        "default":["1920X1080", "1920X1080"]
+        "default":["3840X2160", "3840X2160"]
       }
     },
 
